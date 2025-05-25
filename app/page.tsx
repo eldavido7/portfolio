@@ -31,7 +31,7 @@ export default function Portfolio() {
         <div className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-block">
-              <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
+              <div className="relative md:mt-0 mt-10 px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
                 <span className="relative z-10">
                   Software Engineer & Creative Developer
                 </span>
@@ -125,7 +125,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 relative">
+      <section id="about" className="md:py-32 py-10 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -188,7 +188,14 @@ export default function Portfolio() {
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">awarri74@gmail.com</div>
+                    <div className="font-medium break-words w-full">
+                      <a
+                        className="text-white break-words"
+                        style={{ overflowWrap: "anywhere" }}
+                      >
+                        awarri74@gmail.com
+                      </a>
+                    </div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Location</div>
@@ -216,7 +223,7 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-32 relative">
+      <section id="skills" className="md:py-32 py-10 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -246,7 +253,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-32 relative">
+      <section id="projects" className="md:py-32 py-10 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -302,7 +309,7 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-32 relative">
+      <section id="experience" className="md:py-32 py-10 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/3 right-1/3 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -321,7 +328,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 relative">
+      <section id="contact" className="md:py-32 py-10 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -344,13 +351,21 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center shrink-0">
                     <Linkedin className="h-5 w-5 text-purple-400" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <div className="text-sm text-zinc-500">LinkedIn</div>
-                    <div className="font-medium">
-                      https://www.linkedin.com/in/davidawarri/
+                    <div className="font-medium break-words w-full">
+                      <a
+                        href="https://www.linkedin.com/in/davidawarri/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:underline break-words"
+                        style={{ overflowWrap: "anywhere" }}
+                      >
+                        https://www.linkedin.com/in/davidawarri/
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -360,7 +375,17 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">GitHub</div>
-                    <div className="font-medium">github.com/eldavido7</div>
+                    <div className="font-medium break-words w-full">
+                      <a
+                        href="https://github.com/eldavido7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:underline break-words"
+                        style={{ overflowWrap: "anywhere" }}
+                      >
+                        https://github.com/eldavido7
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -369,7 +394,7 @@ export default function Portfolio() {
                 <h4 className="text-lg font-medium mb-4">Current Status</h4>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                  <span>
+                  <span className="text-sm font-medium">
                     Available for freelance work and full-time opportunities
                   </span>
                 </div>

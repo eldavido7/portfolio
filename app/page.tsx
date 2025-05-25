@@ -44,7 +44,7 @@ export default function Portfolio() {
                 David Awarri
               </span>
             </h1>
-            <p className="text-xl text-zinc-400 max-w-[600px]">
+            <p className="text-xl text-white max-w-[600px]">
               I have a passion for crafting visually stunning and functional
               user interfaces, I specialize in turning ideas into reality by
               building seamless digital experiences.
@@ -62,10 +62,7 @@ export default function Portfolio() {
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Button>
-              <Button
-                variant="outline"
-                className="border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-500"
-              >
+              <Button className="border-zinc-700 border text-zinc-300 hover:text-purple-500 hover:border-zinc-500">
                 <a href="#contact" className="relative z-10 flex items-center">
                   Contact Me
                 </a>
@@ -161,11 +158,9 @@ export default function Portfolio() {
             <div className="space-y-6">
               <GlassmorphicCard>
                 <p className="text-lg text-zinc-300">
-                  With a passion for crafting visually stunning and functional
-                  user interfaces, I specialize in turning ideas into reality by
-                  building seamless digital experiences. My expertise lies in
-                  frontend development, leveraging cutting-edge technologies to
-                  match design precision with flawless execution
+                  My expertise lies in frontend development, leveraging
+                  cutting-edge technologies to match design precision with
+                  flawless execution
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
                   I combine strong technical skills with excellent interpersonal

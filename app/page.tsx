@@ -299,6 +299,14 @@ export default function Portfolio() {
               demoUrl="https://halaminherbal.vercel.app/"
               repoUrl="https://github.com/eldavido7/ecommerce-dashboard"
             />
+            <ProjectCard
+              title="Hospital Management System"
+              description="This is a full-featured Hospital Management System (HMS) designed for local server deployment in a mid-sized hospital. Backend is simulated and data is persisted using zustand store until refreshed."
+              tags={["Next.js", "React", "TypeScript", "Zustand"]}
+              image="/hms.jpg?height=400&width=600"
+              demoUrl="https://hospital-management-system-six-gules.vercel.app/"
+              repoUrl="https://github.com/eldavido7/hospital-management-system"
+            />
           </div>
         </div>
       </section>
